@@ -1,2 +1,15 @@
-# Coding_Test
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# 공부 예정
+
+14. 집합과 맵
+
+16. 스택, 큐, 덱
+
+13. 정렬 + 25. 이분 탐색
+
+22. 누적 합 + 23. 그리디
+
+26. 우선순위 큐 + 27. 그래프와 순회
+
+29. 최단 경로 + 34. 유니온 파인드
+
+46. 문자열 알고리즘
