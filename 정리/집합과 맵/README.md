@@ -10,8 +10,28 @@
 - **집합 연산**
   - `retainAll(other)` : 교집합  
   - `addAll(other)` : 합집합  
-  - `removeAll(other)` : 차집합  
-
+  - `removeAll(other)` : 차집합
+  
+    ```
+    Set<Integer> set1 = new HashSet<>();
+    Set<Integer> set2 = new HashSet<>();
+    
+    set1.add(1);
+    set1.add(2);
+    set1.add(3);
+    
+    set2.add(3);
+    set2.add(4);
+    
+    // 교집합
+    set1.retainAll(set2); // {3}
+    
+    // 합집합
+    set1.addAll(set2);    // {1, 2, 3, 4}
+    
+    // 차집합
+    set1.removeAll(set2); // {1, 2}
+    ```
 ---
 
 ## 맵 (Map)
@@ -27,3 +47,27 @@
 - **활용 예시**
   - 단어 빈도수 세기
   - 빠른 키-값 탐색
+    
+    ```
+    Map<String, Integer> map = new HashMap<>();
+
+    map.put("apple", 3);
+    map.put("banana", 2);
+    
+    // 값 조회
+    int count = map.get("apple"); // 3
+    
+    // 키 존재 여부
+    boolean hasKey = map.containsKey("banana"); // true
+    
+    // 값 변경
+    map.put("banana", map.get("banana") + 1); // banana -> 3
+    
+    // 삭제
+    map.remove("apple");
+    
+    // 크기 / 비었는지 확인
+    map.size();
+    map.isEmpty();
+
+    ```
